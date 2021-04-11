@@ -1,0 +1,10 @@
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'select2.min', plugin: 'assignable_select2' %>
+    <%= javascript_include_tag "select2.min",plugin: 'assignable_select2'  %>
+<% end %>
+<%= javascript_tag do %>
+$(document).ready(function(){
+    $("#issue_assigned_to_id").select2({width: '70%'});
+});
+<% end %>
