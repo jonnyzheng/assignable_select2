@@ -1,4 +1,8 @@
-require_dependency 'select2_hook_listener'
+require 'redmine'
+
+
+require_relative './lib/select2_hook_listener.rb'
+
 
 Redmine::Plugin.register :assignable_select2 do
   name 'Assignable Select2 plugin'
